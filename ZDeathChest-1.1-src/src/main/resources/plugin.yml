@@ -1,0 +1,34 @@
+name: ZAltar
+version: '1.1'
+main: com.example.zaltar.Zaltar
+api-version: '1.21'
+commands:
+  ccloot:
+    description: Открывает меню лута.
+    usage: /ccloot
+    permission: cc.ccloot
+  cc:
+    description: Спавнит эндер-сундук под игроком.
+    usage: /cc
+    permission: cc.cc
+  checkcc:
+    description: Проверяет статус спавна.
+    usage: /checkcc
+    permission: cc.checkcc
+  ccreload:
+    description: Перезагрузка конфигурационного файла.
+    usage: /ccreload
+    permission: cc.ccreload
+permissions:
+  cc.ccloot:
+    description: "Позволяет использовать команду /ccloot."
+    default: op
+  cc.cc:
+    description: "Позволяет использовать команду /cc"
+    default: op
+  cc.checkcc:
+    description: "Позволяет использовать команду /checkcc"
+    default: op
+  cc.ccreload:
+    description: "Позволяет перезагружать конфигурационный файл."
+    default: op
